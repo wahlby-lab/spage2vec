@@ -1,5 +1,5 @@
-<!--[![bioRxiv shield](https://img.shields.io/badge/bioRxiv-10.1101/765842-red.svg)](https://doi.org/10.1101/765842)
-[![DOI](https://zenodo.org/badge/199853991.svg)](https://zenodo.org/badge/latestdoi/199853991)-->
+[![bioRxiv shield](https://img.shields.io/badge/bioRxiv-10.1101/765842-red.svg)](https://doi.org/10.1101/2020.02.12.945345)
+<!--[![DOI](https://zenodo.org/badge/199853991.svg)](https://zenodo.org/badge/latestdoi/199853991)-->
 
 # Spage2vec: Unsupervised detection of spatial gene expression constellations
 
