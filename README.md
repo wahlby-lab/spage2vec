@@ -34,4 +34,4 @@ The following python packages are required for running the notebooks:
 Spatial gene expression data for the three analyzed assays can be downloaded at: https://doi.org/10.5281/zenodo.3664723. Please extract the content of the zipped archive in this repository local folder before running the notebooks.
 
 ## Citation
-[1] Partel, G., and Wählby C. Spage2vec: Unsupervised detection of spatial gene expression constellations. BioRxiv, , (2019).
+[1] Partel, G., and Wählby C. Spage2vec: Unsupervised detection of spatial gene expression constellations. BioRxiv, https://doi.org/10.1101/2020.02.12.945345, (2019).
