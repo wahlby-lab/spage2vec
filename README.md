@@ -1,7 +1,7 @@
 [![bioRxiv shield](https://img.shields.io/badge/bioRxiv-10.1101/765842-red.svg)](https://doi.org/10.1101/2020.02.12.945345)
 [![DOI](https://zenodo.org/badge/239975864.svg)](https://zenodo.org/badge/latestdoi/239975864)
 
-# Spage2vec: Unsupervised detection of spatial gene expression constellations
+# Spage2vec: Unsupervised representation of localized spatial gene expression signatures
 
 
 This repository contains a collection of python notebooks for reproducing analyses and results from the original publication [1]. The **`notebooks`** folder contains code for:
@@ -31,7 +31,7 @@ The following python packages are required for running the notebooks:
   - `loompy==3.0.6`
 
 ### Data Download
-Spatial gene expression data for the three analyzed assays can be downloaded at: https://doi.org/10.5281/zenodo.3664723. Please extract the content of the zipped archive in this repository local folder before running the notebooks.
+Spatial gene expression data for the analyzed assays can be downloaded at: https://doi.org/10.5281/zenodo.3897401. Please extract the content of the zipped archive in this repository local folder before running the notebooks.
 
 ## Citation
 [1] Partel, G., and Wählby C. Spage2vec: Unsupervised detection of spatial gene expression constellations. BioRxiv, https://doi.org/10.1101/2020.02.12.945345, (2019).
