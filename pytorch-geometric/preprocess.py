@@ -54,13 +54,19 @@ df_heart_cell['cell_type_id'].to_csv(os.path.join(result_dir, 'celltype.csv'))
 # build graph
 df_edge = {}
 pct = 99
+distances_all = []
 print(pct)
 for name in ['4.5_1', '4.5_2', '4.5_3', '6.5_1', '6.5_2', '9.5_1', '9.5_2', '9.5_3']:
     spots = df[name][['spotX', 'spotY']]
     kdtree = KDTree(spots)
     distances, _ =  kdtree.query(spots, k=2)
-    d_max = np.percentile(distances[:,1], pct)
-    print(d_max)
+    distances_all.append(distances)
+distances_all = np.concatenate(distances_all, axis=0)
+d_max = np.percentile(distances_all[:,1], pct)
+print(d_max)
+for name in ['4.5_1', '4.5_2', '4.5_3', '6.5_1', '6.5_2', '9.5_1', '9.5_2', '9.5_3']:
+    spots = df[name][['spotX', 'spotY']]
+    kdtree = KDTree(spots)
     ind = kdtree.query_radius(spots, d_max)
     df_edge[name] = pd.DataFrame(
         data=[(spots.index[i], spots.index[j]) for i in range(len(spots)) for j in ind[i] if i < j], 

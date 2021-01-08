@@ -11,7 +11,7 @@ os.environ['PYTHONHASHSEED']=str(SEED)
 random.seed(SEED)
 np.random.seed(SEED)
 
-sc.logging.print_versions()
+sc.logging.print_header()
 sc.settings.verbosity = 4
 
 data_dir = os.path.join(os.getcwd(), 'data')

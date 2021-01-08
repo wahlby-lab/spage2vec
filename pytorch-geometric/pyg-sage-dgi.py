@@ -47,7 +47,7 @@ num_samples = [-1, -1] # number of samples in each layer
 batch_size = 64
 hidden_channels = 32
 epochs = 10
-disable = False
+disable = True
 
 train_loader = NeighborSampler(
     data.edge_index, node_idx=None,
@@ -152,7 +152,7 @@ z = model.encoder.inference(data.x)
 node_embeddings = z.detach().cpu().numpy()
 result_dir = os.path.join(os.getcwd(), 'results')
 os.makedirs(result_dir, exist_ok=True)
-embedding_name = time.strftime('{}-embedding-%Y%m%d-%H%M%S.npy'.format(type(model.encoder).__name__))
+embedding_name = time.strftime('{}-embedding-%Y%m%d.npy'.format(type(model.encoder).__name__))
 np.save(os.path.join(result_dir, embedding_name), node_embeddings)
 print(embedding_name)
 
