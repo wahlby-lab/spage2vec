@@ -110,7 +110,7 @@ z = model(data.x, data.adj_t)
 node_embeddings = z.detach().cpu().numpy()
 result_dir = os.path.join(os.getcwd(), 'results')
 os.makedirs(result_dir, exist_ok=True)
-embedding_name = time.strftime('{}-embedding-%Y%m%d-%H%M%S.npy'.format(type(model).__name__))
+embedding_name = time.strftime('{}-embedding-%Y%m%d.npy'.format(type(model).__name__))
 np.save(os.path.join(result_dir, embedding_name), node_embeddings)
 print(embedding_name)
 
